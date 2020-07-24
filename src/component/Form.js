@@ -20,30 +20,30 @@ export default function Form(props) {
             <h2>Add Toppings</h2>
                 <label>
                     Olives    
-                    <input type='checkbox' name='olives' checked={form.olives} onChange={handleChange} />
+                    <input id='olives' type='checkbox' name='olives' checked={form.olives} onChange={handleChange} />
                 </label>
 
                 <label>
                     Pineapples    
-                    <input type='checkbox' name='pineapples' checked={form.pineapples} onChange={handleChange} />
+                    <input id='pineapples' type='checkbox' name='pineapples' checked={form.pineapples} onChange={handleChange} />
                 </label>
 
                 <label>
                       Three Cheese  
-                    <input type='checkbox' name='cheese' checked={form.cheese} onChange={handleChange} />
+                    <input id='cheese' type='checkbox' name='cheese' checked={form.cheese} onChange={handleChange} />
                 </label>
 
                 <label>
                     Green Pepper    
-                    <input type='checkbox' name='pepper' checked={form.pepper} onChange={handleChange} />
+                    <input id='pepper' type='checkbox' name='pepper' checked={form.pepper} onChange={handleChange} />
                 </label>
                 
                 <label>
                     Special Instructions
-                    <input type="textarea" name='instructions' value={form.instructions} onChange={handleChange} />
+                    <input id='special' type="textarea" name='instructions' value={form.instructions} onChange={handleChange} />
                 </label>
             
-            <button disabled={disable} type='submit' >Add to Order</button>
+            <button id='submit' disabled={disable} type='submit' >Add to Order</button>
         </form>
     )
 }
